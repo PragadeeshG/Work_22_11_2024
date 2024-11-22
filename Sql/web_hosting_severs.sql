@@ -1,0 +1,15 @@
+create table if not exists web_hosting_severs(
+web_app_name varchar(255) not null,
+web_app_folder varchar(255) null,
+conf_file_available char null,
+log_folder_count Integer null,
+log_location varchar(255) null,
+sym_link varchar(255) null,
+webserver_code Integer null,
+http_apache_code Integer null,
+webserver_port varchar(255) null,
+total_instances Integer null,
+prod_instance_name varchar(255) null,
+dr_instance_name varchar(255) null,
+ssl_configuration varchar(255) null,
+constraint web_hosting_severs_pk primary key(web_app_name));
